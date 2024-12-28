@@ -1,10 +1,14 @@
 # PaperMC Docker
-This is a Linux Docker image for the PaperMC Minecraft server.
+This is a Linux Docker image and Docker Compose configuration file for the PaperMC Minecraft server.
 
 PaperMC is an optimized Minecraft server with plugin support (Bukkit, Spigot, Sponge, etc.).
 This image provides a basic PaperMC server. All customizations are left to the user.
 # Usage
 It is assumed that the user has already acquired a working Docker installation. If that is not the case, go do that and come back here when you're done.
+## Docker Compose
+With included Docker Compose file, you can create a new PaperMC Minecraft server running on version 1.21.3 build 82 (note that running said command indicates agreement to the Minecraft EULA):
+
+```sudo docker compose up -d```
 ## Command
 With this image, you can create a new PaperMC Minecraft server with one command (note that running said command indicates agreement to the Minecraft EULA). Here is an example:
 
