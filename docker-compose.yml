@@ -1,0 +1,16 @@
+volumes:
+  minecraft-papermc-data:
+
+services:
+  minecraft-papermc:
+    image: "phyremaster/papermc"
+    ports:
+      - "25565:25565"
+      - "127.0.0.1:25575:25575"
+    environment:
+      - MC_VERSION=1.21.3
+      - PAPER_BUILD=82
+      - EULA=true
+    volumes:
+      - minecraft-papermc-data:/papermc:rw
+    restart: on-failure
